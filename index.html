@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mario Site</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.MainMariobg{
+			width: 100%;
+			height: 100vh;
+			background-image: url('image/mariobg.png');
+			background-size: 100% 100%;
+			position: relative; 
+		}
+		.mario img{
+			position: absolute;
+			bottom: 35px;
+			animation-name: mariorun;
+			animation-duration: 6s;
+			animation-iteration-count: 5;
+			animation-timing-function: linear;
+			
+		}
+		@keyframes mariorun{
+			0%{left: 0%; }
+			100%{left: 88%; }
+		}
+
+		.pikachu img{
+			position: absolute;
+			bottom: 35px;
+			animation-name: mariorun;
+			animation-duration: 6s;
+			animation-iteration-count: 5;
+			animation-timing-function: linear;
+			animation-delay: 0.5s;
+		}
+		@keyframes mariorun{
+			0%{left: 0%; }
+			100%{left: 88%; }
+		}
+		
+		.batman img{
+			position: absolute;
+			bottom: 10px;
+			animation-name: mariorun;
+			animation-duration: 6s;
+			animation-iteration-count: 5;
+			animation-timing-function: linear;
+			animation-delay: 1.2s;
+		}
+		@keyframes mariorun{
+			0%{left: 0%; }
+			100%{left: 88%; }
+		}
+
+
+		h2{
+			color: white;
+			text-transform: uppercase;
+			font-size: 2em;
+			letter-spacing: 2px;
+			position: absolute;
+			top:30%;
+			left: 40%;
+			animation: mariotext 4s linear;
+			animation-iteration-count: 5;		
+			animation-delay: 1s;
+		}
+
+
+		@keyframes mariotext{
+			0%{font-size: 2em;}
+			100%{font-size: 3em; left:40% ;}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="MainMariobg">
+		<div class="mario">
+		<img src="image/mario.gif" width='150px'>
+		<h2>Mario Run Run</h2>
+	    </div>
+		<div class= "pikachu">
+	
+		<img src="image/pikachu.gif" width='150px'>
+
+		</div>
+	<div class="batman">
+	<img src="image/batman.gif" width='330px'>		
+	</div>
+	</div>
+
+</body>
+</html>
